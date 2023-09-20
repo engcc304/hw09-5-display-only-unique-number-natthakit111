@@ -40,28 +40,28 @@
 #include <stdio.h>
 
 int main() {
-    int n;
-    printf("Input N : ");
-    scanf("%d", &n);
+    int n ;
+    printf( "Input N : " ) ;
+    scanf( "%d", &n ) ;
 
-    int a[n];
-    int numner[1000] = {0}; // สร้างอาเรย์ numner เพื่อตรวจสอบว่าตัวเลขนั้นซ้ำหรือไม่
+    int a[n] ;
+    int numner[1000] = {0} ; // สร้างอาเรย์ numner เพื่อตรวจสอบว่าตัวเลขนั้นซ้ำหรือไม่
 
     // รับข้อมูลและตรวจสอบค่าที่ไม่มีการซ้ำกัน
-    for (int i = 0; i < n; i++) {
-        printf("Input : ");
-        scanf("%d", &a[i]);
-        numner[a[i]]++;
-    }
+    for ( int i = 0 ; i < n ; i++ ) {
+        printf( "Input : " ) ;
+        scanf( "%d", &a[i] ) ;
+        numner[a[i]]++ ;
+    }//end for
 
     // แสดงผลลัพธ์
-    printf("Unique value : ");
-    for (int i = 0; i < 1000; i++) {
-        if (numner[i] == 1) {
-            printf("%d ", i);
-        }
-    }
-    printf("\n");
+    printf( "Unique value : " ) ;
+    for ( int i = 0 ; i < 1000 ; i++ ) {
+        if ( numner[i] == 1 ) {
+            printf( "%d ", i ) ;
+        }//end if
+    }//end for
+    printf( "\n" ) ;
 
-    return 0;
-}
+    return 0 ;
+}//end function
